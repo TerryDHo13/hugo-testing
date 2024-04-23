@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on My Site</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs on My Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 </copyright>
+    <lastBuildDate>Tue, 23 Apr 2024 10:29:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/docs/configuration/</link>
+      <pubDate>Tue, 23 Apr 2024 10:29:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/configuration/</guid>
+      <description>Create a site #Commands #Run these commands on a Git Bash terminal to create a new site with the &amp;ldquo;Ananke&amp;rdquo; theme.</description>
+      
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>http://localhost:1313/docs/installation/</link>
+      <pubDate>Tue, 23 Apr 2024 10:18:13 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/installation/</guid>
+      <description>Requirements #The requirements needed to create a docuemntation siste using Hugo are listed below:-</description>
+      
+    </item>
+    
+  </channel>
+</rss>
