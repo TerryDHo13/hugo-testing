@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
@@ -43,11 +43,8 @@
   
   
   
-  
-  
-  
-  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.613a6e4377a0537a2b458bc886a92b1a4732de69d81772d030141b1e24c665c9c87a6459c5c10b02e0c69d4d1c4f9a69fd99dc3666fe6aa7d81ae2fff516bea7.js"
-    integrity="sha512-YTpuQ3egU3orRYvIhqkrGkcy3mnYF3LQMBQbHiTGZcnIemRZxcELAuDGnU0cT5pp/ZncNmb&#43;aqfYGuL/9Ra&#43;pw==" data-copy="" data-copied=""></script>
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.3f354537071ffde8a37d7f5b5eb0fea76345387a132a0c386682cae063b66ebb6285757ca88352be474056280043b16f4f53986014c1f818a9aabf17220ae601.js"
+    integrity="sha512-PzVFNwcf/eijfX9bXrD&#43;p2NFOHoTKgw4ZoLK4GO2brtihXV8qINSvkdAVigAQ7FvT1OYYBTB&#43;Bipqr8XIgrmAQ==" data-copy="" data-copied=""></script>
   
   
   <script src="/js/zoom.min.js"></script>
@@ -124,7 +121,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -150,20 +151,10 @@
 
             
             
-  <a href="/docs/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="">
-        Docs
-    </p>
-</a>
-
-
-            
-            
-  <a href="/guides/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-    
-    <p class="text-base font-medium" title="">
-        Guides
+        Posts
     </p>
 </a>
 
@@ -318,24 +309,10 @@
 
                     
   <li class="mt-1">
-    <a href="/docs/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="">
-            Docs
-        </p>
-    </a>
-</li>
-
-
-
-                    
-
-                    
-  <li class="mt-1">
-    <a href="/guides/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
-        
-        <p class="text-bg font-bg" title="">
-            Guides
+            Posts
         </p>
     </a>
 </li>
@@ -356,6 +333,26 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
   
   <div class="relative flex flex-col grow">
@@ -437,14 +434,6 @@
     
 
     
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
-      
-      
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
-    </p>
     
 
   </div>

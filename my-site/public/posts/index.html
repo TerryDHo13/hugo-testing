@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
@@ -65,6 +65,7 @@
   <meta property="og:url" content="http://localhost:1313/posts/">
   <meta property="og:site_name" content="My Site">
   <meta property="og:title" content="Posts">
+  <meta property="og:description" content="This section contains the test documentation of the website.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
@@ -121,7 +122,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -329,6 +334,26 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
   
   <div class="relative flex flex-col grow">
@@ -371,6 +396,16 @@
   </div>
   
   
+    
+    
+      
+      
+    
+  <script>
+    var oid = "views_posts\\_index.md"
+    var oid_likes = "likes_posts\\_index.md"
+  </script>
+  
   
   
   <script type="text/javascript" src="/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
@@ -378,7 +413,8 @@
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
     
     <div class="min-w-0 min-h-0 max-w-prose">
-      
+      <p>This section contains the test documentation of the website. Feel fre to go through and explore the features in this website.</p>
+
     </div>
    
 
@@ -424,21 +460,17 @@
 
 
 
-  <a class="flex flex-wrap article " href="/posts/my-first-post/">
-    <div class=" mt-3 md:mt-0">
+  <a class="flex flex-wrap article " href="/posts/configuration/">
+    
+        
+        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/posts/configuration/featured_hub34ff5d06afab9d85c1bba90b2a06c9d_313855_600x0_resize_q75_box.jpg);"></div>
+        
+      <div class=" mt-3 md:mt-0">
       <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/posts/my-first-post/">Form Application</div>
+          href="/posts/configuration/">Configuration</div>
         
-        
-        <div class=" ltr:ml-2 rtl:mr-2">
-          <span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Draft
-  </span>
-</span>
-        </div>
         
         
       </div>
@@ -455,17 +487,11 @@
 
 
 
-  
 
 
 
 
 
-  
-
-
-
-  
 
 
 
@@ -482,7 +508,179 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-04-23 10:18:13 &#43;0800 &#43;08">23 April 2024</time><span class="px-2 text-primary-500">&middot;</span><span>55 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+
+  
+  
+</div>
+
+
+
+
+
+
+
+      </div>
+      
+    </div>
+  </a>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article " href="/posts/installation/">
+    
+        
+        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/posts/installation/featured_hu76d41677a9222fa5b321ab43dc4954f5_55083_600x0_resize_q75_box.jpg);"></div>
+        
+      <div class=" mt-3 md:mt-0">
+      <div class="items-center text-left text-xl font-semibold">
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/installation/">Installation</div>
+        
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+      </div>
+      
+    </div>
+  </a>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article " href="/posts/form-application/">
+    
+        
+        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/posts/form-application/featured_huae68de2673b389a8e027e38e0ea8a63f_6772_600x0_resize_box_3.png);"></div>
+        
+      <div class=" mt-3 md:mt-0">
+      <div class="items-center text-left text-xl font-semibold">
+        
+        <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
+          href="/posts/form-application/">Form Application</div>
+        
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
   
 
   
@@ -510,7 +708,13 @@
     
 
   
-      
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
@@ -528,14 +732,6 @@
     
 
     
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
-      
-      
-      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
-    </p>
     
 
   </div>

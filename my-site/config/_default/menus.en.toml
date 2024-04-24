@@ -16,14 +16,14 @@
   weight = 1
 
 [[main]]
-  name = "Docs"
-  pageRef = "docs"
+  name = "Posts"
+  pageRef = "posts"
   weight = 2
 
-[[main]]
-  name = "Guides"
-  pageRef = "guides"
-  weight = 3
+#[[main]]
+# name = "Docs"
+# pageRef = "docs"
+# weight = 3
 
 #[[main]]
 #  name = "example sub-menu 2"

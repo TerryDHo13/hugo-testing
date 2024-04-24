@@ -7,35 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Tue, 23 Apr 2024 10:29:51 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Form Application</title>
-      <link>http://localhost:1313/guides/form-application/</link>
-      <pubDate>Tue, 23 Apr 2024 10:29:51 +0800</pubDate>
-      
-      <guid>http://localhost:1313/guides/form-application/</guid>
-      <description>Purpose of the Form Application #The purpose of this form/application is to collect essential information from users for a specific process or service</description>
-      
-    </item>
-    
+    <lastBuildDate>Wed, 24 Apr 2024 09:50:12 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configuration</title>
-      <link>http://localhost:1313/docs/configuration/</link>
-      <pubDate>Tue, 23 Apr 2024 10:29:09 +0800</pubDate>
+      <link>http://localhost:1313/posts/configuration/</link>
+      <pubDate>Wed, 24 Apr 2024 09:50:12 +0800</pubDate>
       
-      <guid>http://localhost:1313/docs/configuration/</guid>
+      <guid>http://localhost:1313/posts/configuration/</guid>
       <description>Create a site #Commands #Run these commands on a Git Bash terminal to create a new site with the &amp;ldquo;Ananke&amp;rdquo; theme.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/configuration/featured.jpg" />
     </item>
     
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/docs/installation/</link>
-      <pubDate>Tue, 23 Apr 2024 10:18:13 +0800</pubDate>
+      <link>http://localhost:1313/posts/installation/</link>
+      <pubDate>Wed, 24 Apr 2024 09:45:59 +0800</pubDate>
       
-      <guid>http://localhost:1313/docs/installation/</guid>
+      <guid>http://localhost:1313/posts/installation/</guid>
       <description>Requirements #The requirements needed to create a docuemntation siste using Hugo are listed below:-</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/installation/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Form Application</title>
+      <link>http://localhost:1313/posts/form-application/</link>
+      <pubDate>Wed, 24 Apr 2024 09:11:40 +0800</pubDate>
       
+      <guid>http://localhost:1313/posts/form-application/</guid>
+      <description>Purpose of the Form Application #The purpose of this form/application is to collect essential information from users for a specific process or service</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/form-application/featured.png" />
     </item>
     
   </channel>
